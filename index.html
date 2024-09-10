@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless Moments Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6eaf1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            /* Warna teks judul */
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            position: relative;
+            flex: 1 1 calc(33.333% - 32px);
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            /* Menjaga ukuran gambar dan memastikan tampilan sesuai */
+            display: block;
+            border-bottom: 4px solid #e6eaf1;
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            /* Latar belakang semi-transparan */
+            color: #fff;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            border-top: 1px solid #e6eaf1;
+            /* Garis atas */
+            box-sizing: border-box;
+            opacity: 0;
+            /* Mulai dengan caption tersembunyi */
+            transition: opacity 0.3s ease;
+            /* Transisi untuk efek tampil */
+        }
+
+        .gallery-item:hover .caption {
+            opacity: 1;
+            /* Caption muncul saat hover */
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            /* Membesarkan kotak foto sedikit saat hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Timeless Moments Gallery</div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/foto1.jpg">
+                <div class="caption">Colosseum, Italia</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto2.jpg">
+                <div class="caption">Patung Liberty, Amerika Serikat</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto3.jpg">
+                <div class="caption">Chichen Itza, Meksiko</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto4.jpg">
+                <div class="caption">Petra, Yordania</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto5.jpg">
+                <div class="caption">Taj Mahal, India</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto6.jpg">
+                <div class="caption">Menara pisa, Italia</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto7.jpg">
+                <div class="caption">Angkor Wat, Kamboja</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto8.jpg">
+                <div class="caption">Stonehenge, Inggris</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto9.jpg">
+                <div class="caption">Alhambra, Spanyol</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto10.jpg">
+                <div class="caption">Istanbul, Turki</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto11.jpg">
+                <div class="caption">Kanal Rideau, Kanada</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/foto12.jpg">
+                <div class="caption">Borobudur, Indonesia</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
